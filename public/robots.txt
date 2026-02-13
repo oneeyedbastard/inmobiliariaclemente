@@ -1,0 +1,45 @@
+User-agent: *
+
+# Bloquea directorios de administración y privados
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /login/
+Disallow: /private/
+
+# Bloquea las páginas de resultados de búsqueda internos
+Disallow: /search
+Disallow: /buscar
+Disallow: /resultados
+
+# Bloquea el rastreo de archivos específicos por extensión
+Disallow: /*.pdf$
+Disallow: /*.docx$
+Disallow: /*.xlsx$
+
+# Para controlar el acceso de bots de IA
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+# Ubicación del mapa del sitio
+Sitemap: https://www.inmobiliariaclemente.com/sitemap.xml
